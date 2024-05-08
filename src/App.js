@@ -4,11 +4,13 @@ import {BrowserRouter, Route,Routes, Link} from 'react-router-dom'
 import { Regular } from './pages/Regular';
 import { HomePage } from './pages/HomePage';
 import { Hot } from './pages/Hot';
-import { Mem } from './component/Mem';
+
+
 
 
 function App() {
   return (
+
     <BrowserRouter>
     <div className="App">
       <h1>Mem servis</h1>
@@ -23,12 +25,7 @@ function App() {
   <Route path="/hot" element={<Hot/>}/>
 </Routes>
     </div>
-    <div>
-      <Regular/>
-    </div>
-
     </BrowserRouter>
-  
   );
 }
 
