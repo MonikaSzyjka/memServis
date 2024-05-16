@@ -1,9 +1,11 @@
-import { Mems } from "../component/Mem";
+import { DisplayMem } from "../component/DisplayMem";
+import { Mems } from "../component/Mems"
 
-export function HomePage(){
-    return(
-    <h1>Strona Główna</h1>,
-    <section>
-        <Mems/>
-    </section>
-)}
+
+
+export function HomePage() {
+    const hotFiltr = Mems.filter(mem => mem.upvotes - mem.downvotes > 5)
+return(
+ 
+<div><DisplayMem/></div>)
+}
